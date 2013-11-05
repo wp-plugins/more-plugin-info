@@ -1,5 +1,5 @@
 === More Plugin Info ===
-Contributors: thaicloud
+Contributors: Thaicloud
 Tags: plugin, meta, ratings, downloads
 Author URI: http://brainstormmedia.com 
 Plugin URI: http://knowmike.com/more-plugin-info
@@ -21,6 +21,11 @@ To change the plugin settings, go to Settings > More Plugin Info and select whic
 1. Upload the `more-plugin-info` folder to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Go to Settings > More Plugin Info and click on the 'Update Plugin Data Now' button to pull data from WordPress.org
+
+== Screenshots ==
+
+1. An example plugin as seen on the plugin listing page; note the 'Average Rating' and 'Number of Ratings' values. Many additional values may be shown as well.
+2. The More Plugin Info settings page permits field toggle, as well as auto or manual sync down of plugin data from WordPress.org.
 
 == Changelog ==
 
