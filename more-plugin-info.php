@@ -2,7 +2,7 @@
 /*
 Plugin Name: More Plugin Info
 Description: Displays additional information about each plugin on the Plugins page
-Version: 1.0.0
+Version: 1.0.1
 Author: Mike Jordan
 Author URI: http://brainstormmedia.com/
 */
