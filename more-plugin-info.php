@@ -106,11 +106,12 @@ class MJ_More_Plugin_Info {
 				
 				$plugin['requires'] = "Requires: $plugin_info->requires";
 				$plugin['tested'] = "Tested: $plugin_info->tested";
-				$plugin['rating'] = "Average Rating: $plugin_info->rating";
-				$plugin['num_ratings'] = "# of Ratings: $plugin_info->num_ratings";
+				$plugin['rating'] = "Average rating: $plugin_info->rating";
+				$plugin['num_ratings'] = "# of ratings: $plugin_info->num_ratings";
 				$plugin['added'] = "Added: $plugin_info->added";
-				$plugin['donate_link'] = "<a href='$plugin_info->donate_link'>Donate</a>";
-				$plugin['download_link'] = "<a href='$plugin_info->download_link'>Download</a>";
+				$plugin['plugin_link'] = "<a target='_blank' href='http://wordpress.org/plugins/$slug'>WordPress.org page</a>";
+				$plugin['donate_link'] = "<a target='_blank' href='$plugin_info->donate_link'>Donate</a>";
+				$plugin['download_link'] = "<a target='_blank' href='$plugin_info->download_link'>Download</a>";
 				$plugin['updated'] = "Updated: $plugin_info->last_updated";
 				$plugin['downloads'] = "Downloads: $plugin_info->downloaded";
 				
@@ -156,6 +157,8 @@ class MJ_More_Plugin_Info {
 				array_push( $links, $this->plugin_meta[ $slug ]['requires'] );
 			if ( $settings['tested'] )
 				array_push( $links, $this->plugin_meta[ $slug ]['tested'] );
+			if ( $settings['plugin_link'] )
+				array_push( $links, $this->plugin_meta[ $slug ]['plugin_link'] );
 			if ( $settings['donate_link'] )
 				array_push( $links, $this->plugin_meta[ $slug ]['donate_link'] );
 			if ( $settings['download_link'] )
@@ -295,6 +298,17 @@ class MJ_More_Plugin_Info {
 		    array(                               
 		        'id' => 'mpi-settings[tested]',
 		  		'value' => $settings['tested']
+		    )
+		);
+		add_settings_field(   
+		    'mpi_plugin_link',                        
+		    'WordPress.org Link',                
+		    array( $this, 'checkbox_callback' ),     
+		    'more-plugin-info',                           
+		    'mpi_general_options_section',           
+		    array(                               
+		        'id' => 'mpi-settings[plugin_link]',
+		  		'value' => $settings['plugin_link']
 		    )
 		);
 		add_settings_field(   

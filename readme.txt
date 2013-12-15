@@ -4,7 +4,7 @@ Tags: plugin, meta, ratings, downloads
 Author URI: http://brainstormmedia.com 
 Plugin URI: http://knowmike.com/more-plugin-info
 Requires at least: 2.8
-Tested up to: 3.6.1
+Tested up to: 3.8.0
 Stable tag: 1.0.1
 
 Connects to the WordPress.org Plugin API to display additional plugin information about
@@ -28,6 +28,9 @@ To change the plugin settings, go to Settings > More Plugin Info and select whic
 2. The More Plugin Info settings page permits field toggle, as well as auto or manual sync down of plugin data from WordPress.org. 
 
 == Changelog ==
+
+= 1.0.2 =
+* Add option for link to wordpress.org plugin page
 
 = 1.0.1 =
 * Header error fix
