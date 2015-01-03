@@ -4,7 +4,7 @@ Plugin Name: More Plugin Info
 Description: Display additional information about each plugin on the Plugins page
 Version: 1.1.0
 Author: Mike Jordan
-Author URI: http://brainstormmedia.com/
+Author URI: http://knowmike.com/
 */
 
 add_action( 'init', 'MJ_More_Plugin_Info::get_instance' );
