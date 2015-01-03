@@ -1,11 +1,11 @@
 === More Plugin Info ===
 Contributors: Thaicloud
 Tags: plugin, meta, ratings, downloads
-Author URI: http://brainstormmedia.com 
-Plugin URI: http://knowmike.com/more-plugin-info
-Requires at least: 2.8
-Tested up to: 3.8.0
-Stable tag: 1.0.2
+Author URI: http://knowmike.com
+Plugin URI: http://wordpress.org/plugins/more-plugin-info/
+Requires at least: 3.0
+Tested up to: 4.1.0
+Stable tag: 1.1.0
 
 Connects to the WordPress.org Plugin API to display additional plugin information about
 installed plugins, such as number of downloads and rating.
@@ -28,6 +28,19 @@ To change the plugin settings, go to Settings > More Plugin Info and select whic
 2. The More Plugin Info settings page permits field toggle, as well as auto or manual sync down of plugin data from WordPress.org. 
 
 == Changelog ==
+
+= 1.1.0 =
+* Improve security: add escape & sanitization functions
+
+= 1.0.4 =
+* Fix cron enable/disable behavior
+
+= 1.0.3 =
+* Schedule weekly cron for plugin data sync
+* Add filter for changing cron frequency
+* Remove auto-sync option for each load of plugins screen
+* register_uninstall_hook function for removing options on uninstall
+* Update readme
 
 = 1.0.2 =
 * Add option for link to wordpress.org plugin page
