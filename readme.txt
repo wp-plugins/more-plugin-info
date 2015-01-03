@@ -12,9 +12,16 @@ installed plugins, such as number of downloads and rating.
 
 == Description ==
 
-Hooks into the plugin listing to display relevant information about installed plugins, and provides a setting page for selecting which fields should be shown.
+Ever wish that the plugins page on your WordPress site had more information about the plugins that you have installed?
 
-To change the plugin settings, go to Settings > More Plugin Info and select which checkboxes you would like to be included. This information may be seen on the Plugins page, at the bottom of each plugin listed.
+You shouldn't have to open up another tab and search for the plugin on wordpress.org just to find out things like:
+When was it last updated? How many ratings does it have? What version of WordPress has it been tested up to?
+
+This plugin resolves that issue- it grabs details about all of the plugins on your site from wordpress.org, and displays them right there underneath each plugin's description. It also includes a settings page, so you can choose which information you want to be shown.
+
+There aren't a lot of unnecessary bells and whistles here- this is a secure, clean-cut way to customize the information shown on your plugins page.
+
+Enjoy!
 
 == Installation ==
 
