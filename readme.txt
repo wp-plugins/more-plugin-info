@@ -31,7 +31,7 @@ Enjoy!
 
 == Screenshots == 
 
-1. An example plugin as seen on the plugin listing page; note the 'Average Rating' and 'Number of Ratings' values. Many additional values may be shown as well. 
+1. An example plugin as seen on the plugin listing page; note the newly added number of downloads and star rating. Many additional values may be shown as well.
 2. The More Plugin Info settings page permits field toggle, as well as auto or manual sync down of plugin data from WordPress.org. 
 
 == Changelog ==
